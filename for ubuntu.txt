@@ -1,0 +1,88 @@
+for ubuntu
+1  sudo apt-get update
+ sudo apt upgrade
+ sudo apt install unzip
+     wget https://releases.hashicorp.com/terraform/1.14.5/terraform_1.14.5_linux_amd64.zip
+     unzip terraform_1.14.5_linux_amd64.zip 
+     sudo mv terraform /usr/local/bin/
+     terraform --version
+     sudo vim basic.tf
+
+resource "local_file" "create_file" {
+
+filename = "/home/ubuntu/automated.txt"
+content = "this my frist terraform script"
+}
+
+:wq
+     terraform validate (check validate)
+     terraform init (for initialized)
+     terraform validate
+     terraform plan
+     terraform apply
+ yes
+     cat automated.txt 
+     sudo vim basic.tf 
+ resource "local_file" "create_file" {
+
+filename = "/home/ubuntu/automated.txt"
+content = "this my frist terraform script"
+}
+
+resource "random_string" "random-string" {
+
+length = 16
+special =true
+override_special ="!@#$^&*"
+
+}
+     
+output "random-string" {
+
+value = random_string.random-string
+
+}
+
+:wq
+   terraform validate
+     terraform init
+     terraform validate
+     terraform plan
+     terraform apply
+yes
+     vim basic.tf
+     sudo vim basic.tf
+ resource "local_file" "create_file" {
+
+filename = "/home/ubuntu/automated.txt"
+content = "this my frist terraform script"
+}
+
+resource "random_string" "random-string" {
+
+length = 16
+special =true
+override_special ="!@#$^&*"
+
+}
+     
+output "random-string" {
+
+value = random_string.random-string[*].result
+
+}
+
+:wq
+     terraform apply
+yes
+     sudo apt install docker.io -y
+     git clone https://github.com/Ankit9340/node-todo-app.git
+     ls
+     cd node-todo-app/
+     ls
+     sudo docker build -t node-todo-app .
+     sudo docker images
+     sudo docker login -u junaidtyagi and enter pswd
+     sudo docker images
+     sudo docker tag node-todo-app mihirnaidu/node-todo-app:latest
+     sudo docker push mihirnaidu/node-todo-app:latest

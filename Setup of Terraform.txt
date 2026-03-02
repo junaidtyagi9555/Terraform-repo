@@ -1,0 +1,27 @@
+for Windows
+
+Download terraform and AWS CLI
+
+extract terraform and move c/program file/terraform
+
+add in system variables in path of terraform (c/program file/terraform)
+
+In AWS create a user and provide admin access download Secret-key & access-ID
+
+then open cmd type aws --v for check version 
+aws configure for configuration
+
+past access id and secret key
+
+
+write tf file
+
+terraform validate (for checking validation)
+terraform plan ( for checking what action this doing)
+terraform init ( for instalixation)
+terraform apply ( for apply the changes)
+
+enter value=yes
+
+
+terraform destroy (for remove changes)
